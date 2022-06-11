@@ -62,14 +62,14 @@
     </div>
     <div class="container">
         <h3 style="text-align: center; margin: 0 0 50px 0">Edit with TouchBar</h3>
-        <img class="center" src="img/touchbar.jpg" width="600" style="border-radius: 5px" alt="FSNotes Touch Bar on macOS"/>
+        <img class="center" src="img/front/touchbar.webp" width="600" style="border-radius: 5px" alt="FSNotes Touch Bar on macOS"/>
         <p style="text-align: center">Edit faster with virtual buttons on your TouchBar</p>
     </div>
     <div class="wide_container">
         <div class="basic_container">
 
             <h3 style="text-align: center; margin: 0 0 50px 0">Lock notes with TouchID</h3>
-            <img class="center" src="img/fingerprint.png" width="400" style="border-radius: 5px" alt="Fingerprint on macOS and iOS"/>
+            <img class="center" src="img/front/fingerprint.webp" width="400" style="border-radius: 5px" alt="Fingerprint on macOS and iOS"/>
             <p style="text-align: center">Encrypt and decrypt sensitive notes with one touch</p>
 
         </div>
@@ -134,6 +134,8 @@
                 <li><strong>Night mode</strong> by location or screen brightness.</li>
                 <li><strong>Sharing</strong> extension.</li>
                 <li><strong>Encrypted note</strong> support.</li>
+                <li><strong>Auto versioning</strong>.</li>
+                <li>Organize with <strong>tags</strong>.</li>
             </ul>
         </div>
     </div>
@@ -144,11 +146,11 @@
         <table width="100%" class="pro">
             <tr>
                 <td>
-                    <h3 style="font-size: 19px;">GitHub <img style="margin: -3px 0 0 0"; height="19px" src="img/github.png" /></h3>
+                    <h3 style="font-size: 19px;">GitHub <img style="margin: -3px 0 0 0"; height="19px" src="img/github.webp" /></h3>
 
                 </td>
                 <td>
-                    <h3 style="font-size: 19px">Twitter <img style="margin: -3px 0 0 0" height="19px" src="img/twitter.png" /></h3>
+                    <h3 style="font-size: 19px">Twitter <img style="margin: -3px 0 0 0" height="19px" src="img/twitter.webp" /></h3>
                 </td>
             </tr>
             <tr>
@@ -177,8 +179,16 @@
         </p>
 
     </div>
-    <br>
+
+    <div class="wide_container">
+        <div class="basic_container" style="text-align: center;">
+            <h2 style="margin: 0" id="feedback">Feedback</h2>
+
+            <p>Please feel free to send feedback and questions by email to <a href="mailto: support@fsnot.es">support@fsnot.es</a></p>
+
+            <p>Telegram: <a target="_blank" href="https://t.me/fsnotesapp">https://t.me/fsnotesapp</a></p>
+        </div>
+    </div>
 </div>
 
-{{ partial "feedback.html" . }}
 {{ end}}

@@ -156,7 +156,7 @@ img {
 }
 
 .wide_container {
-    background: #DDDDDD;
+    background: #ECEEEF;
 }
 
 .ios-screens {
@@ -177,7 +177,7 @@ table td p {
 .navi_sup {
     border-radius: 4px;
     padding: 2px;
-    background: green;
+    background: #0463A1;
     color: white;
 }
     .navi_sup a {
@@ -195,7 +195,6 @@ table td p {
 
 .basic_container img,
 .container img {
-    padding: 20px;
     margin: 0 auto;
     max-width: 400px;
     display: block

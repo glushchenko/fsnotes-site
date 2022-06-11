@@ -16,7 +16,7 @@ The interface of the program has not changed much, but inside this update at lea
 
 My good friend Matt Sephton created a GitHub issue back in 2018, I think you guessed... Yes, I'm talking about the folder tree in the sidebar. As you know, 'Three years is not too long to wait for what is promised', so get it and sign :) <a href="https://github.com/glushchenko/fsnotes/issues/188">https://github.com/glushchenko/fsnotes/issues/188</a>
 
-![](/img/fsnotes5/1.png)
+![](/img/fsnotes5-mac/1.webp)
 
 The root folder is displayed with a simple title, and can be changed in the settings, as before. If it's iCloud Drive, then for the GitHub version, the label is now also localized. If not, then the default name will be Documents.
 
@@ -26,11 +26,11 @@ The root folder is displayed with a simple title, and can be changed in the sett
 
 It seems to me that the system function was added back in macOS Mojave, now the entire color palette is available in FSNotes.
 
-![](/img/fsnotes5/2.png)
+![](/img/fsnotes5-mac/2.webp)
 
 A lot of work has been done to put in order the selected rows of the table and those on which the focus is set.
 
-![](/img/fsnotes5/4.png)
+![](/img/fsnotes5-mac/4.webp)
 
 Tags are also colored with new colors (available in macOS BigSur and higher).
 
@@ -40,7 +40,7 @@ Tags are also colored with new colors (available in macOS BigSur and higher).
 
 I kept waiting for Apple to fix WKWebView so that it would be possible to humanly print documents. But nothing has changed in macOS Monterey, and I decided to use the old API from WebView.
 
-![](/img/fsnotes5/5.png)
+![](/img/fsnotes5-mac/5.webp)
 
 Now printing user manuals will be more convenient, and images are fully supported.
 
@@ -52,13 +52,13 @@ Tags experienced many transformations, from storing files in metadata, to inline
 
 1. In the sidebar of FSNotes 5, actions have appeared, thanks to which you can rename or remove tags from all documents in a couple of clicks:
 
-![](/img/fsnotes5/6.png)
+![](/img/fsnotes5-mac/6.webp)
 
 2. It would not be interesting to select one tag, so I added the ability to batch select not only for deletion, but also for renaming. Select ten tags, rename to one.
 3. Added "Untagged" smart tag in the sidebar header. This can be useful for cataloging a large number of documents. However, if you do not need it, you can always disable it in "View -> Show in sidebar".
 4. In macOS BigSur and above, the tag is highlighted with an accent color from the system settings, it looks like this:
 
-![](/img/fsnotes5/3.png)
+![](/img/fsnotes5-mac/3.webp)
 
 5. Fixed a bunch of bugs related to deselect by clicking on tags, I think you will like the polished new version.
 
@@ -68,7 +68,7 @@ Removed the smart tag Inbox and Notes, by default the program displays all notes
 
 And there was also an opportunity to use old queries from the search, for this you can click on the magnifying glass in the search bar or just double-click `cmd - L`.
 
-![](/img/fsnotes5/7.png)
+![](/img/fsnotes5-mac/7.webp)
 
 ---
 
@@ -76,7 +76,7 @@ And there was also an opportunity to use old queries from the search, for this y
 
 Previously, you could not override shortcuts for navigating between notes and directories. Now you can in the View menu:
 
-![](/img/fsnotes5/8.png)
+![](/img/fsnotes5-mac/8.webp)
 
 If you select text in the editor and press `cmd - x`, you can cut the entire line at once without selecting the text.
 
