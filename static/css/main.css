@@ -177,11 +177,10 @@ table td p {
 .navi_sup {
     border-radius: 4px;
     padding: 2px;
-    background: #0463A1;
-    color: white;
+    border: 1px solid #0463A1;
 }
     .navi_sup a {
-        color: white;
+        color: #0B98F5;
         text-decoration: none;
     }
 
