@@ -114,4 +114,4 @@ This feature will appeal to anyone who blogs in hugo, octopress and others. In t
 - Added new icons
 - Added path setting for Recycle Bin
 
-More than 50 bug fixes, see the beta logs on GitHub.
+More than 50 bug fixes, see the beta logs on GitHub ;-)
