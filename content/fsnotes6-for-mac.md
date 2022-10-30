@@ -10,6 +10,8 @@ Hello everyone, it's been a long time since the last big issue. The covid ended,
 
 So let's start with the new features.
 
+<a href="https://www.producthunt.com/posts/fsnotes-6?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-fsnotes&#0045;6" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=365247&theme=light" alt="FSNotes&#0032;6 - Notes&#0032;manager&#0032;and&#0032;text&#0032;editor&#0032;for&#0032;macOS | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 ---
 
 ## Multiple windows
