@@ -1,5 +1,5 @@
 ---
-title: "FSNotes 5 for macOS"
+title: "FSNotes 5 for iOS"
 date: 2022-05-23T18:23:15+03:00
 draft: false
 ---
