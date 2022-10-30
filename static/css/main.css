@@ -220,6 +220,10 @@ table td p {
     .content img {
         max-width: 90%;
     }
+
+    p {
+        padding: 0 10px;
+    }
 }
 
 .app_store_buttons a,
