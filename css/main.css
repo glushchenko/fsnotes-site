@@ -88,10 +88,12 @@ h1 span {
 
 h2 {
     text-align: center;
+    padding: 0 10px;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 0 10px;
 }
 
 h1, h2, h3 {
@@ -134,6 +136,10 @@ hr.s {
 
 img {
     max-width: 90%;
+}
+
+p {
+    padding: 0 10px;
 }
 
 .center {
@@ -219,10 +225,6 @@ table td p {
     .container img,
     .content img {
         max-width: 90%;
-    }
-
-    p {
-        padding: 0 10px;
     }
 }
 
