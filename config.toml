@@ -1,3 +1,6 @@
 baseURL = 'https://fsnot.es/'
 languageCode = 'en-us'
 title = 'Modern notes manager for macOS and iOS'
+
+[markup.goldmark.renderer]
+unsafe = true # Allow HTML in md files

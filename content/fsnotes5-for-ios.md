@@ -5,6 +5,7 @@ draft: false
 ---
 
 ## Meet FSNotes 5 for Mobile!
+
 ### Interface
 
 Transitions between controllers have become smoother and more native, this applies to both the main screen and the editor. Access to the settings has become easier.
