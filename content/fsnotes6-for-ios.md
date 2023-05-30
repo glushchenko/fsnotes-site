@@ -81,6 +81,6 @@ In collaboration with Zac Cohan, SoulverCore syntax has been added. This calcula
 
 Earlier there were some problems with encryption of folders, app crashes, and previewing notes. All of this has been fixed.
 
-New bugs was added of course :)
+New bugs may have been added, of course.
 
 -- Oleksandr, Kharkiv, Ukraine
