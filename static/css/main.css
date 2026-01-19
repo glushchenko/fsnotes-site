@@ -106,6 +106,8 @@ li {
 }
 
 .fsnotes_logo {
+    border: 2px solid gray;
+    border-radius: 30px;
     margin: -10px 0 0 0;
     vertical-align: middle;
     width: 104px;
