@@ -85,7 +85,7 @@ h3 {
 html[lang^="zh"] h1,
 html[lang^="zh"] h2,
 html[lang^="zh"] h3,
-html[lang^="zh"] .site_brand_name span {
+html[lang^="zh"] .site_brand_text {
     letter-spacing: 0;
 }
 
@@ -150,12 +150,21 @@ header {
     display: inline-flex;
 }
 
-.site_brand_name span {
+.site_brand_text {
     font-size: 56px;
     font-weight: 200;
     letter-spacing: -0.045em;
     line-height: 1;
     margin-left: 20px;
+}
+
+.site_brand_f {
+    color: #15191d;
+}
+
+.site_brand_s {
+    color: var(--color-accent);
+    margin-right: 0.015em;
 }
 
 .fsnotes_logo {
@@ -684,7 +693,7 @@ header {
         position: static;
     }
 
-    .site_brand_name span {
+    .site_brand_text {
         font-size: 43px;
         margin-left: 14px;
     }
