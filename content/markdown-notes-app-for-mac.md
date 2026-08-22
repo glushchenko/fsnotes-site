@@ -34,7 +34,7 @@ Sync and backup solve different problems: iCloud keeps devices current, while Gi
 
 ## Open source, with no subscription
 
-FSNotes is [open source on GitHub](https://github.com/glushchenko/fsnotes). You can inspect the code, download the app for free, or purchase it from the Mac App Store to support continued development and receive convenient updates.
+FSNotes is [open source on GitHub](https://github.com/glushchenko/fsnotes). You can inspect the code, while the official stable distribution is available from the Mac App Store with convenient updates.
 
 There is no required account and no recurring subscription.
 

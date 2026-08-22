@@ -35,7 +35,7 @@ iCloud Drive 可以让 Mac 和 iPhone 上的 Markdown 资料库保持同步。FS
 
 ## 开源且无需订阅
 
-FSNotes 在 [GitHub 上开源](https://github.com/glushchenko/fsnotes)。您可以查看源代码、免费下载应用，也可以在 Mac App Store 购买，以支持持续开发并方便地接收更新。
+FSNotes 在 [GitHub 上开源](https://github.com/glushchenko/fsnotes)。您可以查看源代码；官方稳定版本可通过 Mac App Store 获取，并能方便地接收更新。
 
 无需强制账户，也没有周期性订阅。
 
