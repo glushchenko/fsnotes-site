@@ -683,12 +683,12 @@ header {
     header {
         display: flex;
         flex-direction: column;
-        padding: 24px 20px 26px;
+        padding: 26px 20px;
     }
 
     .language_switcher {
-        align-self: flex-end;
-        margin: 0 0 14px;
+        align-self: center;
+        margin: 0 0 32px;
         order: -1;
         position: static;
     }
