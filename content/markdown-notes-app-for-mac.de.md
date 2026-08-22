@@ -35,7 +35,7 @@ Synchronisierung und Backup lösen unterschiedliche Aufgaben: iCloud hält Gerä
 
 ## Open Source und ohne Abonnement
 
-FSNotes ist [Open Source auf GitHub](https://github.com/glushchenko/fsnotes). Sie können den Quellcode prüfen; die offizielle stabile Version mit bequemen Updates ist im Mac App Store erhältlich.
+FSNotes ist [Open Source auf GitHub](https://github.com/glushchenko/fsnotes). Sie können den Quellcode prüfen und die offizielle stabile Version mit automatischen Updates im Mac App Store erhalten.
 
 Es gibt kein Pflichtkonto und kein wiederkehrendes Abonnement.
 
