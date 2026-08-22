@@ -1,16 +1,18 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="{{ .Params.html_lang | default .Site.Language.Lang | default "en" }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>
-        {{ if eq .Params.custom_title_enabled true }}
-            {{ .Params.custom_title_value }} | FSNotes App
-        {{ else }}
-            {{ .Title }} | FSNotes App
-        {{ end }}
-    </title>
-    <meta name="description" content="Modern notes manager for macOS/iOS">
+    {{- $defaultDescription := .Site.Params.description -}}
+    {{- $description := .Params.description | default $defaultDescription -}}
+    {{- $title := printf "%s | FSNotes" .Title -}}
+    {{- if .IsHome -}}
+        {{- $title = "FSNotes — Fast Markdown Notes App for Mac & iPhone" -}}
+    {{- else if .Params.seo_title -}}
+        {{- $title = .Params.seo_title -}}
+    {{- end -}}
+    <title>{{ $title }}</title>
+    <meta name="description" content="{{ $description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ if .Permalink }}
     <link rel="canonical" href="{{ .Permalink }}" />
@@ -21,8 +23,36 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FSNotes">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ "img/fsnotes7/FSNotes7_macOS_iOS.webp" | absURL }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    <meta name="twitter:image" content="{{ "img/fsnotes7/FSNotes7_macOS_iOS.webp" | absURL }}">
+
+{{ if .IsHome }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "FSNotes",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "macOS, iOS",
+      "description": "A fast, open-source Markdown notes app that stores notes as plain files.",
+      "url": "https://fsnot.es/",
+      "downloadUrl": "https://itunes.apple.com/app/fsnotes/id1277179284",
+      "isAccessibleForFree": true,
+      "license": "https://github.com/glushchenko/fsnotes/blob/master/LICENSE"
+    }
+    </script>
+{{ end }}
     
-    <link rel="stylesheet" href="/css/main.css?v=1.2">
+    <link rel="stylesheet" href="/css/site.css?v=2">
+    <script defer src="/js/lightbox.js?v=1"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DC2G73331"></script>
@@ -36,14 +66,17 @@
 </head>
 <body>
     <header>
-        <a href="/">
-            <h1>
-                <img class="fsnotes_logo" src="/img/icon.webp?v=2" />
+        <a href="/" class="site_brand" aria-label="FSNotes home">
+            <div class="site_brand_name">
+                <img class="fsnotes_logo" src="/img/icon.webp?v=2" alt="FSNotes app icon" />
                 <span>FSNotes</span>
-            </h1>
+            </div>
         </a>
 
         <ul class="navi">
+            <li>
+                <a href="/#features">Features</a>
+            </li>
             <li>
                 <a href="/#pricing">Pricing</a>
             </li>
@@ -76,11 +109,10 @@
                 <a href="/#support">Support</a>
             </li>
             <li>
-                <a href="https://github.com/glushchenko/fsnotes/wiki" target="_blank">Wiki</a>
+                <a href="https://github.com/glushchenko/fsnotes/wiki" target="_blank" rel="noopener">Wiki</a>
             </li>
             <li>
-                <a href="/faq/" target="_blank">FAQ</a>
+                <a href="/faq/">FAQ</a>
             </li>
         </ul>
     </header>
-

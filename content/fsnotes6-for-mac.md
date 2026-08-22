@@ -1,5 +1,6 @@
 ---
 title: "FSNotes 6 for macOS"
+description: "Archived release notes for FSNotes 6 for macOS, including multiple windows, Git integration, encrypted folders, sharing, and quick notes."
 date: 2022-10-30T08:52:00+03:00
 draft: false
 ---

@@ -1,5 +1,6 @@
 ---
 title: "FSNotes 5 for macOS"
+description: "Archived release notes for FSNotes 5 for macOS, including folder navigation, tags, shortcuts, printing, and interface improvements."
 date: 2022-05-23T18:23:15+03:00
 draft: false
 ---

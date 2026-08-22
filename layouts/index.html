@@ -1,97 +1,54 @@
 {{ define "main" }}
 
 <div class="main_page">
-    <div class="wide_container">
-        <div class="index_container">
-            <p>
-                FSNotes is modern notes manager for macOS and iOS. App respects open formats like GitHub Flavored Markdown, so you can easily write documents on iPhone and MacBook.
-                It's simple and blazing fast!
-            </p>
-
-            <h2 id="pricing" style="text-align: left">Pricing</h2>
-            <p>
-                FSNotes is an <a href="https://github.com/glushchenko/fsnotes" target="_blank">open source</a> project and is provided for free, but you can support development by buying application in App Store or Mac App Store for symbolic price.
-            </p>
-
-            <p>No subscriptions ever.</p>
-
-            <p style="text-align: center;" class="app_store_buttons">
-                <a href="https://itunes.apple.com/app/fsnotes/id1277179284">
-                    <img src="img/badge-download-on-the-mac-app-store.svg" alt="">
-                </a>
-
-                <a href="https://itunes.apple.com/app/fsnotes-manager/id1346501102">
-                    <img src="img/badge-download-on-the-app-store.svg" alt="">
-                </a>
-            </p>
+    <section class="hero wide_container">
+        <div class="hero_inner">
+            <div class="hero_copy">
+                <p class="eyebrow">Open source · Plain Markdown · No subscription</p>
+                <h1>Fast Markdown notes for Mac and iPhone</h1>
+                <p class="hero_lead">FSNotes is a native notes app built around files you control. Write in GitHub Flavored Markdown, organize thousands of notes, sync with iCloud, and keep working without an internet connection.</p>
+                <div class="hero_actions app_store_buttons">
+                    <a href="https://itunes.apple.com/app/fsnotes/id1277179284" aria-label="Download FSNotes from the Mac App Store"><img src="img/badge-download-on-the-mac-app-store.svg" alt="Download on the Mac App Store"></a>
+                    <a href="https://itunes.apple.com/app/fsnotes-manager/id1346501102" aria-label="Download FSNotes from the App Store"><img src="img/badge-download-on-the-app-store.svg" alt="Download on the App Store"></a>
+                </div>
+                <p class="hero_note">Free and open source on GitHub. App Store purchases support development.</p>
+            </div>
+            <div class="hero_visual">
+                <img src="img/fsnotes7/FSNotes7_macOS_iOS.webp?v=2" alt="FSNotes 7 displaying Markdown notes on Mac and iPhone">
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <h3 style="text-align: center; margin: 0" id="features">Desktop and Mobile Apps</h3>
-
-        <p style="text-align: center;">
-            <img src="img/fsnotes7/FSNotes7_macOS_iOS.webp?v=2" style="border-radius: 5px;" />
-        </p>
-        <p style="text-align: center">iCloud Drive synchronization</p>
-    </div>
-    <div class="wide_container">
-        <div class="basic_container">
-            <h3 style="text-align: center; margin: 0 0 30px 0">Supports the TextBundle Format</h3>
-
-            <table width="100%" class="pro">
-                <tr>
-                    <td>
-                        <p>Store images and text in one place with</p>
-                        <p>
-                            <a href="http://textbundle.org" target="_blank">TextBundle containers</a> 🧳
-                        </p>
-                    </td>
-                    <td>
-                        <p>Store notes secure with</p>
-                        <p>
-                            <a href="https://github.com/glushchenko/fsnotes/wiki/Containers" target="_blank">Encrypted TextBundle containers</a> (AES-256) 🔐
-                        </p>
-                    </td>
-                </tr>
-                <tr></tr>
-            </table>
-
-            <br>
+    <section class="container feature_section" id="features">
+        <p class="eyebrow centered">Why FSNotes</p>
+        <h2>Your notes stay useful everywhere</h2>
+        <p class="section_intro">FSNotes combines a fast, native Apple experience with durable open formats. There is no account to create and no proprietary database holding your writing hostage.</p>
+        <div class="feature_grid">
+            <article class="feature_card"><h3>Plain Markdown files</h3><p>Open your notes with FSNotes, a text editor, or any other Markdown app. Your files remain readable without FSNotes.</p></article>
+            <article class="feature_card"><h3>Native and fast</h3><p>Built for macOS and iOS with keyboard navigation, instant search, and smooth performance across collections of 10,000+ files.</p></article>
+            <article class="feature_card"><h3>Sync through iCloud</h3><p>Keep the same folders and notes available across your Mac and iPhone using iCloud Drive.</p></article>
+            <article class="feature_card"><h3>Git backups</h3><p>Create scheduled commits, review note history, and optionally push or pull from a remote Git repository.</p></article>
+            <article class="feature_card"><h3>Private when needed</h3><p>Protect individual notes or entire folders with AES-256 encryption and unlock them using Touch ID.</p></article>
+            <article class="feature_card"><h3>Links, tags and folders</h3><p>Build connections with <code>[[wiki links]]</code>, organize notes with tags, and keep your existing folder structure.</p></article>
         </div>
-    </div>
-    <div class="container">
-        <h3 style="text-align: center; margin: 0 0 50px 0">Edit with TouchBar</h3>
-        <img class="center" src="img/front/touchbar.webp" width="600" style="border-radius: 5px" alt="FSNotes Touch Bar on macOS"/>
-        <p style="text-align: center">Edit faster with virtual buttons on your TouchBar</p>
-    </div>
-    <div class="wide_container">
-        <div class="basic_container">
+    </section>
 
-            <h3 style="text-align: center; margin: 0 0 50px 0">Lock notes with TouchID</h3>
-            <img class="center" src="img/front/fingerprint.webp" width="400" style="border-radius: 5px" alt="Fingerprint on macOS and iOS"/>
-            <p style="text-align: center">Encrypt and decrypt sensitive notes with one touch</p>
-
+    <section class="wide_container product_detail">
+        <div class="basic_container split_section">
+            <div>
+                <p class="eyebrow">Local-first by design</p>
+                <h2>Files you own, not a database you rent</h2>
+                <p>FSNotes works directly with folders on your device. There is no mandatory account, cloud service, or subscription. Back up the files however you prefer and switch editors whenever you want.</p>
+                <p>Images and attachments can stay together with text in <a href="http://textbundle.org" target="_blank" rel="noopener">TextBundle containers</a>.</p>
+            </div>
+            <img src="img/fsnotes7/FSNotes7_macOS_Dark.webp?v=2" alt="FSNotes Markdown editor in dark mode on macOS">
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <h3 style="text-align: center; margin: 0 0 50px 0">Dark Mode</h3>
-        <img class="center" src="img/fsnotes7/FSNotes7_macOS_Dark.webp?v=2" width="900" style="border-radius: 5px" alt="Dark Mode on macOS and iOS"/>
-        <p style="text-align: center">Balanced, polished dark theme</p>
-    </div>
+    <section class="container capabilities_section">
+        <h2>Everything needed for a serious notes library</h2>
 
-    <div class="wide_container">
-        <div class="basic_container">
-            <h3 style="text-align: center; margin: 10px 0 30px 0" id="git">Optional Git versioning and backups</h3>
-            <img class="center" src="img/fsnotes7/FSNotes7_git.webp" width="450" style="border-radius: 5px" alt="Git versioning and scheduled backups"/>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>Many more</h2>
-
-        <ul>
+        <ul class="capability_list">
             <li><strong>Markdown-first</strong>. Supports plaintext files.</li>
             <li><strong>Fast and lightweight</strong>. Works smoothly with 10k+ files.</li>
             <li><strong>Access anywhere</strong>. Sync with iCloud Drive.</li>
@@ -109,23 +66,38 @@
             <li><strong>Lock</strong> sensitive notes with AES-256 encryption.</li>
             <li><strong>Mermaid and MathJax</strong> support.</li>
             <li>Optional <strong>Git versioning</strong> and <strong>backups</strong>.</li>
+            <li><strong>TextBundle</strong> and encrypted TextBundle containers for notes with attachments.</li>
+            <li><strong>Touch Bar</strong> editing controls on supported Mac models.</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="wide_container">
+    <section class="wide_container pricing_section" id="pricing">
         <div class="basic_container">
+            <p class="eyebrow centered">Simple pricing</p>
+            <h2>No subscription. Ever.</h2>
+            <p class="section_intro">FSNotes is <a href="https://github.com/glushchenko/fsnotes" target="_blank" rel="noopener">open source</a> and can be downloaded for free. Buying it from the App Store is an easy way to receive updates and support continued development.</p>
+            <div class="hero_actions app_store_buttons centered_actions">
+                <a href="https://itunes.apple.com/app/fsnotes/id1277179284" aria-label="Download FSNotes from the Mac App Store"><img src="img/badge-download-on-the-mac-app-store.svg" alt="Download on the Mac App Store"></a>
+                <a href="https://itunes.apple.com/app/fsnotes-manager/id1346501102" aria-label="Download FSNotes from the App Store"><img src="img/badge-download-on-the-app-store.svg" alt="Download on the App Store"></a>
+            </div>
+        </div>
+    </section>
 
-            <h3 id="ios_features" style="margin: 10px 0 20px 0">FSNotes for iOS</h3>
+    <section class="wide_container ios_section" id="ios_features">
+        <div class="basic_container">
+            <p class="eyebrow centered">On the go</p>
+            <h2>FSNotes for iPhone</h2>
+            <p class="section_intro">Use the same Markdown files and familiar organization on your Mac and iPhone.</p>
             <ul class="ios-screens">
                 <li>
-                    <img src="img/fsnotes7/FSNotes7_iOS.webp?v=2" class="ios-screen" />
+                    <img src="img/fsnotes7/FSNotes7_iOS.webp?v=2" class="ios-screen" alt="FSNotes note list and editor on iPhone">
                 </li>
                 <li>
-                    <img src="img/fsnotes7/FSNotes7_iOS_Dark.webp?v=2" class="ios-screen" />
+                    <img src="img/fsnotes7/FSNotes7_iOS_Dark.webp?v=2" class="ios-screen" alt="FSNotes dark mode on iPhone">
                 </li>
             </ul>
 
-            <ul>
+            <ul class="ios_feature_list">
                 <li><strong>Sync via iCloud Drive</strong>.</li>
                 <li><strong>TextBundle</strong> and <strong>EncryptedTextBundle</strong> containers.</li>
                 <li><strong>Pinned</strong> notes kept in sync with the desktop app.</li>
@@ -139,65 +111,45 @@
                 <li><strong>Web Pages Creation</strong>.</li>
             </ul>
 
-            <p>
-                Please <strong>do not</strong> buy if such features are important to you in mobile FSNotes:
-            </p>
-
-            <ul>
-                <li><strong style="color: red">NO</strong> Dropbox, WebDAV, Google Drive sync.</li>
-            </ul>
+            <p class="compatibility_note"><strong>Sync compatibility:</strong> FSNotes for iOS currently supports iCloud Drive. Dropbox, WebDAV, and Google Drive sync are not available.</p>
         </div>
-    </div>
+    </section>
 
-    <div class="index_container">
-        <h2 style="text-align: center; margin: 0" style="font-size: 25px; " id="community">Community ⚒</h2>
+    <section class="wide_container community_section" id="community">
+        <div class="basic_container">
+        <p class="eyebrow centered">Built in the open</p>
+        <h2>Open source and community-driven</h2>
+        <p class="section_intro">FSNotes has been developed in the open since 2017. Report bugs, suggest improvements, contribute code, or talk with other users.</p>
 
-        <table width="100%" class="pro">
-            <tr>
-                <td>
-                    <h3 style="font-size: 19px;">GitHub <img style="margin: -3px 0 0 0"; height="19px" src="img/github.webp" /></h3>
+        <div class="community_grid">
+            <article class="community_card community_card_primary">
+                <h3>GitHub</h3>
+                <p>Explore the source code, report issues, propose features, and contribute improvements to FSNotes.</p>
+                <a class="community_link" href="https://github.com/glushchenko/fsnotes" target="_blank" rel="noopener">View FSNotes on GitHub <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="community_card">
+                <h3>Telegram</h3>
+                <p>Ask questions, share workflows, and discuss FSNotes with other members of the community.</p>
+                <a class="community_link" href="https://t.me/fsnotesapp" target="_blank" rel="noopener">Join the Telegram group <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="community_card">
+                <h3>Mastodon</h3>
+                <p>Follow development news, release announcements, and updates from the developer.</p>
+                <a class="community_link" href="https://mastodon.social/@fluder/tagged/fsnotes" target="_blank" rel="me noopener">Follow FSNotes updates <span aria-hidden="true">→</span></a>
+            </article>
+        </div>
 
-                </td>
-                <td>
-                    <h3 style="font-size: 19px">Mastodon <img style="margin: -3px 0 0 0" height="19px" src="img/mastodon.webp" /></h3>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><a href="https://github.com/glushchenko/fsnotes" target="_blank">Repository for macOS/iOS app</a><p>
-                </td>
-                <td>
-                    <a href="https://mastodon.social/@fluder/tagged/fsnotes" target="_blank">https://mastodon.social/@fluder</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><a href="https://github.com/glushchenko/fsnotes/issues" target="_blank">Bug reports</a> and <a href="https://github.com/glushchenko/fsnotes/pulls" target="_blank">pull requests</a> are always appreciated!<p>
-                </td>
-                <td>
+        <p class="contributors_note">Thank you to everyone who has <a href="https://github.com/glushchenko/fsnotes/graphs/contributors" target="_blank" rel="noopener">contributed to FSNotes</a>.</p>
+        </div>
+    </section>
 
-                </td>
-            </tr>
-            <tr></tr>
-        </table>
-
-        <br>
-
-        <p style="text-align: center; margin-bottom: 0">Thanks to all FSNotes <a href="https://github.com/glushchenko/fsnotes/graphs/contributors">contributors</a> who helped me, especially <a href="https://github.com/jeff-h" target="_blank">@jeff-h</a>, <a href="https://github.com/gingerbeardman" target="_blank">@gingerbeardman</a>, <a href="https://github.com/baranpirincal" target="_blank">@baranpirincal</a>, <a href="https://github.com/peavine" target="_blank">@peavine</a>, <a href="https://github.com/buddax2" target="_blank">@buddax2</a>, Michael Barzmann for Deutsch translation,
-            <a href="https://github.com/aonez">aonez</a> for Spanish.
-        </p>
-
-    </div>
-
-    <div class="wide_container">
-        <div class="basic_container" style="text-align: center;">
-            <h2 style="margin: 0" id="support">Support</h2>
-
+    <section class="support_section" id="support">
+        <div class="basic_container">
+            <p class="eyebrow centered">Need help?</p>
+            <h2>Support</h2>
             <p>Please feel free to send your questions by email to <a href="mailto: support@fsnot.es">support@fsnot.es</a></p>
-
-            <p>Telegram: <a target="_blank" href="https://t.me/fsnotesapp">https://t.me/fsnotesapp</a></p>
         </div>
-    </div>
+    </section>
 </div>
 
 {{ end}}

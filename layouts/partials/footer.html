@@ -1,21 +1,19 @@
-    <footer>
-        <h2 style="text-align: center">Mac App Store & App Store</h2>
+    <footer class="site_footer{{ if .IsHome }} site_footer_home{{ end }}">
+        {{ if not .IsHome }}
+        <h2>Download FSNotes</h2>
 
-        <p style="text-align: center;" class="app_store_buttons">
-            <a href="https://itunes.apple.com/app/fsnotes/id1277179284">
-                <img src="/img/badge-download-on-the-mac-app-store.svg" alt="">
+        <div class="footer_store_buttons app_store_buttons">
+            <a href="https://itunes.apple.com/app/fsnotes/id1277179284" aria-label="Download FSNotes from the Mac App Store">
+                <img src="/img/badge-download-on-the-mac-app-store.svg" alt="Download on the Mac App Store">
             </a>
 
-            <a href="https://itunes.apple.com/app/fsnotes-manager/id1346501102">
-                <img src="/img/badge-download-on-the-app-store.svg" alt="">
+            <a href="https://itunes.apple.com/app/fsnotes-manager/id1346501102" aria-label="Download FSNotes from the App Store">
+                <img src="/img/badge-download-on-the-app-store.svg" alt="Download on the App Store">
             </a>
-        </p>
+        </div>
+        {{ end }}
 
-        <p>
-            <span style="text-align: center; margin: 30px auto 0 auto; display: block; color: #5A6369">∞</span>
-        </p>
-
-        <p>© Oleksandr Hlushchenko, 2017–2026 FSNotes</p>
+        <p class="footer_copyright">© Oleksandr Hlushchenko, 2017–2026 FSNotes</p>
     </footer>
 </body>
 </html>

@@ -1,36 +1,52 @@
 ---
 title: "Frequently Asked Questions"
+seo_title: "FSNotes Help — Storage, Backups, Sync and Troubleshooting"
+description: "Answers about FSNotes file storage, missing notes, backups, startup problems, feature requests, and platform support."
 date: 2026-02-08T22:21:00+03:00
+lastmod: 2026-08-22T00:00:00+03:00
 draft: false
 ---
 
-## Frequently Asked Questions
-
 ### 1. Where did my notes go? I opened the app and nothing is there.
 
-Your notes are stored wherever you keep them — FSNotes is just a client for your data. Managing and backing up your data is your responsibility. While the app allows you to conveniently create backups in Git, this does not work without initial setup.
+FSNotes works directly with the folders you choose and does not keep a separate hidden copy of your notes. If the app opens with an empty library, your files are usually still in their original location.
 
-If your notes are missing, check whether they were offloaded from your hard drive to the cloud. If an external drive is disconnected—connect it.
+First, check that the correct storage folder is selected in FSNotes. If the folder is in iCloud Drive, make sure its files have been downloaded to your device. If it is located on an external drive, reconnect the drive and open FSNotes again.
 
-### 2. The app won’t start, what should I do?
+We recommend keeping a separate backup of important notes. FSNotes can create Git-based backups, but this feature needs to be configured before it can protect your files.
 
-Although FSNotes can handle thousands of files, there is still a limit. Try moving your notes from the storage folder to another location and then start the app again. The program might struggle with a large amount of data — return only the files you are actively working on later. If the app still doesn’t start, try [resetting preferences](https://github.com/glushchenko/fsnotes/wiki/Preferences-location).
+### 2. The app won’t start. What should I do?
 
-### 3. Bring back RTF support and the horizontal notes list.
+Sorry about that. A very large library or a problematic file can sometimes prevent FSNotes from starting normally.
 
-I won’t. Acting offended or threatening to switch to FSNotes 6 is useless. All the best.
+Try temporarily moving the contents of your storage folder to another location, then launch FSNotes again. If the app starts, return your notes in smaller groups to identify the file or folder causing the problem. You can also try [resetting the FSNotes preferences](https://github.com/glushchenko/fsnotes/wiki/Preferences-location).
 
-### 4. I want feature Y — when will you add it?
+If the problem continues, please [open a GitHub issue](https://github.com/glushchenko/fsnotes/issues) and include your FSNotes version, operating system version, and a description of what happens at launch.
 
-Probably never. I’m busy fixing and maintaining what already exists. I suggest you make a pull request—everyone will appreciate it since this is an open-source project. You can also fork the project and develop it the way you want.
+### 3. Will RTF support return?
 
-### 5. I have a good idea, how can I tell you about it?
+FSNotes 7 is focused on plain text and Markdown workflows. RTF support is not currently planned to return.
 
-Through GitHub discussions: https://github.com/glushchenko/fsnotes/discussions, and in the Telegram group: https://t.me/fsnotesapp. I read everything but can’t always reply. Sorry, I also have a life outside of the app, which I’ve already dedicated 9 years to.
+We understand that some long-time users prefer the previous workflow. Feedback is welcome, but we cannot promise that every feature from an older major version will be restored.
 
-### 6. There are no keyboard shortcuts, multi-window support, etc., on iPad.
+### 4. I would like a new feature. When will it be added?
 
-That’s true. I do not support iPad — I don’t own one, and frankly, I consider it useless. The old build is only available in the App Store because Apple’s policies don’t allow it to be removed.
+FSNotes is maintained by a small team, so stability, performance, and existing features usually take priority over expanding the roadmap. We read feature requests, but cannot promise whether or when a particular idea will be implemented.
 
---
-Oleksandr, 08.02.2026
+The best place to propose an improvement is [GitHub Discussions](https://github.com/glushchenko/fsnotes/discussions). FSNotes is open source, so well-tested pull requests are also appreciated. You are also welcome to fork the project and adapt it to your own workflow.
+
+### 5. I have an idea. Where should I share it?
+
+Please share product ideas in [GitHub Discussions](https://github.com/glushchenko/fsnotes/discussions). For general conversation and questions, you can also join the [FSNotes Telegram group](https://t.me/fsnotesapp).
+
+All feedback is read and considered, although a personal response may not always be possible. Thank you for helping make FSNotes better.
+
+### 6. Does FSNotes fully support iPad features?
+
+The current iPad build does not receive dedicated iPad features such as full keyboard-shortcut coverage or multi-window support. Development is currently focused on macOS and iPhone.
+
+The existing iPad build remains available in the App Store, but we recommend checking that its current capabilities meet your needs before purchasing.
+
+---
+
+Last updated: August 22, 2026

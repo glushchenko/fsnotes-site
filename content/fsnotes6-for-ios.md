@@ -1,5 +1,6 @@
 ---
 title: "FSNotes 6 for iOS"
+description: "Archived release notes for FSNotes 6 for iOS, including a new design, Git versioning, encrypted folders, editor improvements, and web sharing."
 date: 2023-05-27T18:23:15+03:00
 draft: false
 ---
@@ -12,9 +13,9 @@ The biggest design change in the history of the program. The new FSNotes adheres
 
 I want to give a huge thanks to my friend Dylan Seeger for his valuable advice. Thanks to his ticketing, you see this update like this.
 
-<div style="text-align: center">
-    <img src="/img/fsnotes6-ios/s1x.webp" style="display: inline-block; width: 300px"/>
-    <img src="/img/fsnotes6-ios/s2x.webp" style="display: inline-block; width: 300px"/>
+<div class="content_image_row">
+    <img src="/img/fsnotes6-ios/s1x.webp" class="image_medium" alt="FSNotes 6 interface on iPhone"/>
+    <img src="/img/fsnotes6-ios/s2x.webp" class="image_medium" alt="FSNotes 6 note editor on iPhone"/>
 </div>
 
 ---
@@ -27,8 +28,8 @@ You can create a git repository for each folder and commit your notes and send t
 
 Changes are pulled up when the app activates and you can also set it to do it every 30 seconds automatically.
 
-<div style="text-align: center">
-    <img src="/img/fsnotes6-ios/git-icon.webp" style="display: inline-block; width: 100px"/>
+<div class="content_image_row">
+    <img src="/img/fsnotes6-ios/git-icon.webp" class="image_icon" alt="Git repository icon in FSNotes"/>
 </div>
 
 ---
@@ -41,7 +42,7 @@ Then continue to each folder specifically by selecting it in the sidebar with a 
 
 The selected folder with all the notes will be encrypted with AES-256.
 
-<img src="/img/fsnotes6-ios/encrypt.webp" style="width: 300px"/>
+<img src="/img/fsnotes6-ios/encrypt.webp" class="image_medium" alt="Encrypted folder settings in FSNotes for iOS"/>
 
 ---
 
@@ -51,7 +52,7 @@ The old icon by Roman Kliuchkovych was beautiful, but time is of the essence, fo
 
 I often use the main wallpaper color black, so there is also an all-black version. Mine is set to look like this::
 
-<img src="/img/fsnotes6-ios/icon.webp" style="width: 300px"/>
+<img src="/img/fsnotes6-ios/icon.webp" class="image_medium" alt="FSNotes 6 application icons"/>
 
 ---
 
@@ -59,7 +60,7 @@ I often use the main wallpaper color black, so there is also an all-black versio
 
 Even more actions are available directly within the editor, thanks to the new toolbar you can now quickly create a new note or go to search on the main screen.
 
-<img src="/img/fsnotes6-ios/toolbar.webp" style="width: 300px"/>
+<img src="/img/fsnotes6-ios/toolbar.webp" class="image_medium" alt="FSNotes editor toolbar on iPhone"/>
 
 ---
 
@@ -69,7 +70,7 @@ Sometimes there is a need to quickly share a note. However, not everyone has mar
 
 The note will open in your browser and the link will be copied to your clipboard. So far there is no heavy load and I have not deleted the notes, but over time I think they will be temporary, with a shelf life of 1 month.
 
-<img src="/img/fsnotes6-ios/ipadwpc.webp" style="width: 400px"/>
+<img src="/img/fsnotes6-ios/ipadwpc.webp" class="image_wide" alt="Creating a web page from an FSNotes note"/>
 
 --- 
 

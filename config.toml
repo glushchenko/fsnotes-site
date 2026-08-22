@@ -1,6 +1,10 @@
 baseURL = 'https://fsnot.es/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'Modern notes manager for macOS and iOS'
+disableKinds = ['taxonomy', 'term']
+
+[params]
+description = 'A fast, open-source Markdown notes app for macOS and iOS. Keep notes as plain files, sync with iCloud, back up with Git, and pay no subscription.'
 
 [markup.goldmark.renderer]
 unsafe = true # Allow HTML in md files

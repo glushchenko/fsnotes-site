@@ -1,5 +1,6 @@
 ---
 title: "FSNotes 5 for iOS"
+description: "Archived release notes for FSNotes 5 for iOS, including version history, image editing, interface updates, and editor improvements."
 date: 2022-05-23T18:23:15+03:00
 draft: false
 ---
