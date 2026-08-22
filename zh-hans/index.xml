@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>适用于 macOS 和 iOS 的 Markdown 笔记应用</title>
+		<link>https://fsnot.es/zh-hans/</link>
+		<description>Recent content on 适用于 macOS 和 iOS 的 Markdown 笔记应用</description>
+		<generator>Hugo</generator>
+		<language>zh-Hans</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 22 Aug 2026 00:00:00 +0300</lastBuildDate>
+		
+			<atom:link href="https://fsnot.es/zh-hans/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Mac Markdown 笔记应用</title>
+				<link>https://fsnot.es/zh-hans/mac-markdown-notes/</link>
+				<pubDate>Sat, 22 Aug 2026 00:00:00 +0300</pubDate>
+				<guid>https://fsnot.es/zh-hans/mac-markdown-notes/</guid>
+				<description>&lt;p&gt;FSNotes 是一款快速、原生的 Mac Markdown 笔记应用，适合希望使用普通文件，而不是把内容存进另一个专有数据库的用户。它直接使用 Mac 上的文件夹，支持 GitHub Flavored Markdown，并能在包含数千条笔记的资料库中保持流畅。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>本地优先笔记应用</title>
+				<link>https://fsnot.es/zh-hans/local-first-notes/</link>
+				<pubDate>Sat, 22 Aug 2026 00:00:00 +0300</pubDate>
+				<guid>https://fsnot.es/zh-hans/local-first-notes/</guid>
+				<description>&lt;p&gt;本地优先笔记应用会把设备上的文件视为数据的主要副本。FSNotes 遵循这一模式：笔记位于您选择的文件夹中，可以离线访问，也不依赖 FSNotes 账户或托管服务才能打开。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>常见问题</title>
+				<link>https://fsnot.es/zh-hans/faq/</link>
+				<pubDate>Sun, 08 Feb 2026 22:21:00 +0300</pubDate>
+				<guid>https://fsnot.es/zh-hans/faq/</guid>
+				<description>&lt;h3 id=&#34;1-我的笔记去哪了打开应用后资料库是空的&#34;&gt;1. 我的笔记去哪了？打开应用后资料库是空的。&lt;/h3&gt;&#xA;&lt;p&gt;FSNotes 直接使用您选择的文件夹，不会另外保存一份隐藏的笔记副本。如果应用显示空资料库，您的文件通常仍然位于原来的位置。&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

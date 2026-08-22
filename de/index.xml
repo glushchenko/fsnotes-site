@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Markdown-Notizen für macOS und iOS</title>
+		<link>https://fsnot.es/de/</link>
+		<description>Recent content on Markdown-Notizen für macOS und iOS</description>
+		<generator>Hugo</generator>
+		<language>de</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 22 Aug 2026 00:00:00 +0300</lastBuildDate>
+		
+			<atom:link href="https://fsnot.es/de/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Local-first Notizen-App</title>
+				<link>https://fsnot.es/de/lokale-markdown-notizen/</link>
+				<pubDate>Sat, 22 Aug 2026 00:00:00 +0300</pubDate>
+				<guid>https://fsnot.es/de/lokale-markdown-notizen/</guid>
+				<description>&lt;p&gt;Eine Local-first Notizen-App behandelt die Dateien auf Ihrem Gerät als primäre Kopie Ihrer Daten. FSNotes folgt diesem Modell: Ihre Notizen liegen in Ordnern, die Sie auswählen, bleiben offline verfügbar und lassen sich ohne FSNotes-Konto oder verpflichtenden Onlinedienst öffnen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-local-first-bei-fsnotes-bedeutet&#34;&gt;Was Local-first bei FSNotes bedeutet&lt;/h2&gt;&#xA;&lt;p&gt;FSNotes liest und schreibt reine Markdown- und TextBundle-Dateien direkt. Es gibt keinen vorgeschriebenen Import und keine versteckte Cloud-Datenbank, die als einzige Quelle Ihrer Daten dient.&lt;/p&gt;&#xA;&lt;p&gt;Auch ohne Internet können Sie die auf Ihrem Gerät gespeicherten Dateien lesen, durchsuchen und bearbeiten. Wenn Sie später einen anderen Markdown-Editor verwenden möchten, bleiben dieselben Notizen verfügbar.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Markdown-Notizen-App für Mac</title>
+				<link>https://fsnot.es/de/markdown-notizen-app-mac/</link>
+				<pubDate>Sat, 22 Aug 2026 00:00:00 +0300</pubDate>
+				<guid>https://fsnot.es/de/markdown-notizen-app-mac/</guid>
+				<description>&lt;p&gt;FSNotes ist eine schnelle, native Markdown-Notizen-App für Mac – für Menschen, die einfache Dateien statt einer weiteren proprietären Notizdatenbank möchten. Die App arbeitet direkt mit Ordnern auf dem Mac, unterstützt GitHub Flavored Markdown und bleibt auch bei Sammlungen mit Tausenden Notizen reaktionsschnell.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ihre-notizen-bleiben-normale-dateien&#34;&gt;Ihre Notizen bleiben normale Dateien&lt;/h2&gt;&#xA;&lt;p&gt;Jede Notiz wird in einem offenen Format gespeichert, das Sie prüfen, kopieren, sichern und mit anderen Werkzeugen bearbeiten können. Vor einem Wechsel der Anwendung müssen Sie Ihre Bibliothek nicht erst exportieren. Ihre Texte bleiben auch dann lesbar, wenn FSNotes nicht installiert ist.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Häufig gestellte Fragen</title>
+				<link>https://fsnot.es/de/faq/</link>
+				<pubDate>Sun, 08 Feb 2026 22:21:00 +0300</pubDate>
+				<guid>https://fsnot.es/de/faq/</guid>
+				<description>&lt;h3 id=&#34;1-wo-sind-meine-notizen-nach-dem-start-ist-die-bibliothek-leer&#34;&gt;1. Wo sind meine Notizen? Nach dem Start ist die Bibliothek leer.&lt;/h3&gt;&#xA;&lt;p&gt;FSNotes arbeitet direkt mit den Ordnern, die Sie auswählen, und speichert keine separate versteckte Kopie Ihrer Notizen. Wenn die App eine leere Bibliothek zeigt, befinden sich Ihre Dateien normalerweise weiterhin an ihrem ursprünglichen Speicherort.&lt;/p&gt;&#xA;&lt;p&gt;Prüfen Sie zuerst, ob in FSNotes der richtige Speicherordner ausgewählt ist. Liegt der Ordner in iCloud Drive, stellen Sie sicher, dass die Dateien auf das Gerät geladen wurden. Befindet er sich auf einem externen Laufwerk, verbinden Sie das Laufwerk erneut und öffnen Sie FSNotes noch einmal.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
