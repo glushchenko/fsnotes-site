@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="{{ .Params.html_lang | default .Site.Language.Lang | default "en" }}">
+<html class="no-js" lang="{{ .Params.html_lang | default .Language.Locale | default "en" }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,7 +7,7 @@
     {{- $description := .Params.description | default $defaultDescription -}}
     {{- $title := printf "%s | FSNotes" .Title -}}
     {{- if .IsHome -}}
-        {{- $title = "FSNotes — Fast Markdown Notes App for Mac & iPhone" -}}
+        {{- $title = T "home_seo_title" -}}
     {{- else if .Params.seo_title -}}
         {{- $title = .Params.seo_title -}}
     {{- end -}}
@@ -16,6 +16,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ if .Permalink }}
     <link rel="canonical" href="{{ .Permalink }}" />
+{{ end }}
+{{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}" />
+{{ end }}
+{{ if .IsTranslated }}
+    {{- range where .AllTranslations "Language.Lang" "en" }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- end }}
 {{ end }}
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -51,8 +59,9 @@
     </script>
 {{ end }}
     
-    <link rel="stylesheet" href="/css/site.css?v=2">
+    <link rel="stylesheet" href="/css/site.css?v=10">
     <script defer src="/js/lightbox.js?v=1"></script>
+    <script defer src="/js/github-stars.js?v=1"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DC2G73331"></script>
@@ -66,7 +75,8 @@
 </head>
 <body>
     <header>
-        <a href="/" class="site_brand" aria-label="FSNotes home">
+        {{- $home := "/" | relLangURL -}}
+        <a href="{{ $home }}" class="site_brand" aria-label="{{ T "brand_home_label" }}">
             <div class="site_brand_name">
                 <img class="fsnotes_logo" src="/img/icon.webp?v=2" alt="FSNotes app icon" />
                 <span>FSNotes</span>
@@ -75,44 +85,27 @@
 
         <ul class="navi">
             <li>
-                <a href="/#features">Features</a>
+                <a href="{{ $home }}#features">{{ T "nav_features" }}</a>
             </li>
             <li>
-                <a href="/#pricing">Pricing</a>
-            </li>
-
-            <li>
-                <a href="/v7/">FSNotes 7</a>
-            </li>
-            <!--
-            <li>
-                <a href="/fsnotes6-for-mac/">macOS</a>
-
-                <sup class="navi_sup">
-                    <a href="/fsnotes6-for-mac/">v6</a>
-                </sup>
-            </li>
-
-            <li>
-                <a href="/fsnotes6-for-ios/">iOS</a>
-
-                <sup class="navi_sup">
-                    <a href="/fsnotes6-for-ios/">v6</a>
-                </sup>
-            </li>
-
-            -->
-            <li>
-                <a href="/#community">Community</a>
+                <a href="{{ $home }}#pricing">{{ T "nav_pricing" }}</a>
             </li>
             <li>
-                <a href="/#support">Support</a>
+                {{ with .Site.GetPage "/markdown-notes-app-for-mac" }}<a href="{{ .RelPermalink }}">{{ T "nav_markdown_mac" }}</a>{{ end }}
             </li>
             <li>
-                <a href="https://github.com/glushchenko/fsnotes/wiki" target="_blank" rel="noopener">Wiki</a>
+                {{ with .Site.GetPage "/local-first-notes-app" }}<a href="{{ .RelPermalink }}">{{ T "nav_local_first" }}</a>{{ end }}
             </li>
             <li>
-                <a href="/faq/">FAQ</a>
+                <a href="{{ "/faq/" | relLangURL }}">{{ T "nav_faq" }}</a>
             </li>
         </ul>
+
+        {{ if .IsTranslated }}
+        <nav class="language_switcher" aria-label="{{ T "language_switcher_label" }}">
+            {{ range .AllTranslations }}
+                <a href="{{ .RelPermalink }}" lang="{{ .Language.Locale }}" hreflang="{{ .Language.Locale }}"{{ if eq .Language.Lang $.Language.Lang }} aria-current="page"{{ end }}>{{ .Language.Label }}</a>
+            {{ end }}
+        </nav>
+        {{ end }}
     </header>

@@ -1,10 +1,36 @@
 baseURL = 'https://fsnot.es/'
-locale = 'en-US'
-title = 'Modern notes manager for macOS and iOS'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
 disableKinds = ['taxonomy', 'term']
 
-[params]
-description = 'A fast, open-source Markdown notes app for macOS and iOS. Keep notes as plain files, sync with iCloud, back up with Git, and pay no subscription.'
+[languages]
+  [languages.en]
+  label = 'English'
+  locale = 'en'
+  title = 'Modern notes manager for macOS and iOS'
+  weight = 1
+    [languages.en.params]
+    description = 'A fast, open-source Markdown notes app for macOS and iOS. Keep notes as plain files, sync with iCloud, back up with Git, and pay no subscription.'
+
+  [languages.de]
+  label = 'Deutsch'
+  locale = 'de'
+  title = 'Markdown-Notizen für macOS und iOS'
+  weight = 2
+    [languages.de.params]
+    description = 'Eine schnelle Open-Source-App für Markdown-Notizen auf macOS und iOS. Lokale Dateien, iCloud-Synchronisierung, Git-Backups und kein Abo.'
+
+  [languages.zh-hans]
+  label = '简体中文'
+  locale = 'zh-Hans'
+  title = '适用于 macOS 和 iOS 的 Markdown 笔记应用'
+  weight = 3
+  hasCJKLanguage = true
+    [languages.zh-hans.params]
+    description = '一款适用于 macOS 和 iOS 的快速开源 Markdown 笔记应用。使用本地文件、iCloud 同步和 Git 备份，无需订阅。'
 
 [markup.goldmark.renderer]
 unsafe = true # Allow HTML in md files
+
+[minify]
+disableXML = true

@@ -1,5 +1,10 @@
 {{ define "main" }}
 
+{{ if eq .Language.Lang "de" }}
+{{ partial "home-de.html" . }}
+{{ else if eq .Language.Lang "zh-hans" }}
+{{ partial "home-zh-hans.html" . }}
+{{ else }}
 <div class="main_page">
     <section class="hero wide_container">
         <div class="hero_inner">
@@ -125,6 +130,11 @@
             <article class="community_card community_card_primary">
                 <h3>GitHub</h3>
                 <p>Explore the source code, report issues, propose features, and contribute improvements to FSNotes.</p>
+                <a class="github_stars" href="https://github.com/glushchenko/fsnotes" target="_blank" rel="noopener" aria-label="Star FSNotes on GitHub">
+                    <span class="github_stars_icon" aria-hidden="true">★</span>
+                    <span>Star on GitHub</span>
+                    <span class="github_stars_count" data-github-stars hidden></span>
+                </a>
                 <a class="community_link" href="https://github.com/glushchenko/fsnotes" target="_blank" rel="noopener">View FSNotes on GitHub <span aria-hidden="true">→</span></a>
             </article>
             <article class="community_card">
@@ -147,9 +157,10 @@
         <div class="basic_container">
             <p class="eyebrow centered">Need help?</p>
             <h2>Support</h2>
-            <p>Please feel free to send your questions by email to <a href="mailto: support@fsnot.es">support@fsnot.es</a></p>
+            <p>Send your questions to <a href="mailto:support@fsnot.es">support@fsnot.es</a> or browse the <a href="https://github.com/glushchenko/fsnotes/wiki" target="_blank" rel="noopener">documentation</a>.</p>
         </div>
     </section>
 </div>
 
+{{ end }}
 {{ end}}

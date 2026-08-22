@@ -1,14 +1,14 @@
     <footer class="site_footer{{ if .IsHome }} site_footer_home{{ end }}">
         {{ if not .IsHome }}
-        <h2>Download FSNotes</h2>
+        <h2>{{ T "footer_download" }}</h2>
 
         <div class="footer_store_buttons app_store_buttons">
-            <a href="https://itunes.apple.com/app/fsnotes/id1277179284" aria-label="Download FSNotes from the Mac App Store">
-                <img src="/img/badge-download-on-the-mac-app-store.svg" alt="Download on the Mac App Store">
+            <a href="https://itunes.apple.com/app/fsnotes/id1277179284" aria-label="{{ T "download_mac_aria" }}">
+                <img src="/img/badge-download-on-the-mac-app-store.svg" alt="{{ T "download_mac_alt" }}">
             </a>
 
-            <a href="https://itunes.apple.com/app/fsnotes-manager/id1346501102" aria-label="Download FSNotes from the App Store">
-                <img src="/img/badge-download-on-the-app-store.svg" alt="Download on the App Store">
+            <a href="https://itunes.apple.com/app/fsnotes-manager/id1346501102" aria-label="{{ T "download_ios_aria" }}">
+                <img src="/img/badge-download-on-the-app-store.svg" alt="{{ T "download_ios_alt" }}">
             </a>
         </div>
         {{ end }}
