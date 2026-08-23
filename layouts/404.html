@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="error_page">
+    <section class="error_card" aria-labelledby="error_title">
+        <div class="error_note" aria-hidden="true">
+            <span class="error_code">404</span>
+            <span class="error_cursor"></span>
+        </div>
+
+        <p class="eyebrow">{{ T "error_eyebrow" }}</p>
+        <h1 id="error_title">{{ T "error_title" }}</h1>
+        <p class="error_message">{{ T "error_message" }}</p>
+    </section>
+</main>
+{{ end }}
