@@ -128,7 +128,7 @@ code {
 hr {
     border: 0;
     border-top: 1px solid var(--color-border);
-    margin: 48px 0;
+    margin: 24px 0 48px;
 }
 
 header {
